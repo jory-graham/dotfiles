@@ -9,5 +9,5 @@ setopt interactivecomments
 
 # Shopify
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
-[ -f /Users/$USER/.nix-profile/etc/profile.d/nix.sh] && source /Users/$USER/.nix-profile/etc/profile.d/nix.sh
+[ -f /Users/$USER/.nix-profile/etc/profile.d/nix.sh ] && source /Users/$USER/.nix-profile/etc/profile.d/nix.sh
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
