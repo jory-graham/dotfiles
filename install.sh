@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if [ "$SPIN" ]; then
-  DOTFILES=~/dotfiles
+  DOTFILES_DIR=~/dotfiles
 else
-  DOTFILES=~/src/github.com/jory-graham/dotfiles
+  DOTFILES_DIR=~/src/github.com/jory-graham/dotfiles
 fi
 
 if [ -d $DOTFILES_DIR ] && [ ! -L $DOTFILES_DIR ]; then
