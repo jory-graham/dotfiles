@@ -2,5 +2,9 @@
 
 alias g="git"
 
+alias la="ls -a"
+alias lal="ls -al"
 alias ll="ls -l"
 alias lla="ls -la"
+
+alias e="emacsclient"

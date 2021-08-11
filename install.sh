@@ -13,7 +13,7 @@ if [ -d $DOTFILES_DIR ] && [ ! -L $DOTFILES_DIR ]; then
     echo "Installing $f..."
     target=~/"$f"
     [ -f "$target" ] && mv "$target" "$target.bak"
-    ln -s "$file"  ~/"$f"
+    ln -sf "$file"  ~/"$f"
   done
 else
   echo "Could not find dotfiles directory: $DOTFILES_DIR"
