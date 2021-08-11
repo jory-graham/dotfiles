@@ -1,0 +1,5 @@
+#!/bin/bash
+
+alias g="git"
+
+alias ll="ls -l"
