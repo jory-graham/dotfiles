@@ -32,7 +32,7 @@
   insteadOf = ssh://git@github.com:Shopify/
   insteadOf = ssh://git@github.com:shopify/
 [user]
-  name = Jory Graham
+  name = jory-graham
 
 [includeIf "gitdir/i:Shopify/"]
 	path = .gitconfig-shopify
