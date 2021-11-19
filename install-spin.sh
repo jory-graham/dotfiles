@@ -1,8 +1,8 @@
 #!/bin/bash
 
-alias test="bin/test --include-branch-commits"
-alias style="bin/style --include-branch-commits"
-alias check="bin/check --include-branch-commits"
+alias tibc="bin/test --include-branch-commits"
+alias sibc="bin/style --include-branch-commits"
+alias cibc="bin/check --include-branch-commits"
 alias up="bundle install; bin/rails db:migrate"
 
 
