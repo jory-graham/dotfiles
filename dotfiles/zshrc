@@ -11,3 +11,11 @@ setopt interactivecomments
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 [ -f /Users/$USER/.nix-profile/etc/profile.d/nix.sh ] && source /Users/$USER/.nix-profile/etc/profile.d/nix.sh
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
+if [ -e /Users/jory/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/jory/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+[[ -x /usr/local/bin/brew ]] && eval $(/usr/local/bin/brew shellenv)
+
+# cloudplatform: add Shopify clusters to your local kubernetes config
+export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/jory/.kube/config:/Users/jory/.kube/config.shopify.cloudplatform
+for file in /Users/jory/src/github.com/Shopify/cloudplatform/workflow-utils/*.bash; do source ${file}; done
+kubectl-short-aliases

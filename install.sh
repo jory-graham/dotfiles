@@ -1,7 +1,5 @@
 #!/bin/bash
 
-exit
-
 if [ "$SPIN" ]; then
   DOTFILES_DIR=~/dotfiles
 else
