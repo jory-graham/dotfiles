@@ -1,5 +1,4 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="rkj-repos"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
