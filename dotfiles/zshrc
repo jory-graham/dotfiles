@@ -7,7 +7,6 @@ else
 fi
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.aliases
 
 EDITOR="emacsclient -a''"
 setopt interactivecomments
@@ -19,6 +18,8 @@ setopt interactivecomments
 if [ -e /Users/jory/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/jory/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 [[ -x /usr/local/bin/brew ]] && eval $(/usr/local/bin/brew shellenv)
+
+source $HOME/.aliases
 
 # cloudplatform: add Shopify clusters to your local kubernetes config
 # export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/jory/.kube/config:/Users/jory/.kube/config.shopify.cloudplatform
