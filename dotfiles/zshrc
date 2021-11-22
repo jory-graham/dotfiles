@@ -1,6 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
 
-
 if [ "$SPIN" ]; then
   ZSH_THEME="simple"
 else
